@@ -10,5 +10,22 @@ body{
    display: block;
 } 
 
+button{
+   color: white;
+   background: blue;
+   padding:5px;
+   position: relative;
+   top: 15px;
+   left: 859px;
+   font-size: 15px
+   }
+
+h1{
+   font-family: 'Satisy', cursive;
+   }
+
+h2{
+   font-family: 'Satify', cursive;
+}
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
