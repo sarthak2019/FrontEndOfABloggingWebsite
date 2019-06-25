@@ -10,22 +10,46 @@ body{
    display: block;
 } 
 
-button{
-   color: white;
-   background: blue;
-   padding:5px;
+.header{
+   display: block;
+   padding: 5px;
    position: relative;
-   top: 15px;
-   left: 859px;
+   top: 10px;
    font-size: 15px
    }
 
+.button {
+   background-color:blue;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   float: right;
+   position: relative;
+   top:-120px;
+ }
+
+.button1{
+   display: inline;
+   background-color: yellow;
+   position: relative;
+   text-align: center;
+   font-size: 18px;
+   padding: 5px 5px;
+   left:800px;
+   top:300px;
+   cursor: pointer;
+}
+
 h1{
-   font-family: 'Satisy', cursive;
+   font-family: 'Satisfy', cursive;
+   color: blue;
    }
 
-h2{
-   font-family: 'Satify', cursive;
+h5{
+   font-family: 'Satisfy', cursive;
 }
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
