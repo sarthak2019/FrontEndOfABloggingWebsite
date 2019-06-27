@@ -27,3 +27,14 @@ function postLiked(){
 	}
 }
 
+
+// to add comments and display
+function addComments(id){
+	var addEventName = id.value +'<br>';
+	var commentBox = document.getElementById('userComments');
+	document.getElementById('addEventNames').innerHTML += '<p>'+addEventName+'</p>';         
+	commentBox.value=commentBox.defaultValue;
+}
+
+
+
