@@ -22,7 +22,7 @@ h2{
     text-align: center
 }
 
-modal {
+.modal {
     display: none; 
     position: fixed; 
     z-index: 1; 
@@ -47,7 +47,20 @@ modal {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
   }
-  .modal-content,.modal-content1 {
+
+  .modal2 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal-content{
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -72,12 +85,21 @@ modal {
     font-size: 20px;
     font-weight: bolder;
     margin: 10px 0;
+    display: inline-block;
   }
  
   form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+ }
+
+ #content {
+    width: 100%;
+    margin-top: 6px;
+    background-color: lightgrey;
+    height:500px;
+
  }
  
  .submit-btn {
@@ -88,3 +110,4 @@ modal {
     margin-top: 10px;
     border: 0;
     cursor: pointer;
+ }
