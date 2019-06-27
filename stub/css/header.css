@@ -65,7 +65,7 @@ h2{
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 20%;
   }
   .close {
     color: #aaaaaa;
@@ -99,6 +99,14 @@ h2{
     margin-top: 6px;
     background-color: lightgrey;
     height:500px;
+
+ }
+
+ #content1 {
+    width: 80%;
+    margin-top: 6px;
+    background-color: lightgrey;
+    height:30px;
 
  }
  
