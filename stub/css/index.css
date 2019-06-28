@@ -23,17 +23,23 @@ body{
    top:-120px;
  }
 
-.button1{
-   display: inline;
-   background-color: yellow;
-   position: relative;
+ .postButtons{
+   display:block;
+   margin:auto;
+   position:absolute;
+   top: 42%;
+   left:42%;
+ }
+ 
+ .button1{
+   background-color: rgb(207, 181, 59);
+   padding: 10px;
+   font: 1em sans-serif;
+   font-weight:bold;
+   height: 40px;
+   margin: 5px;
    text-align: center;
-   font-size: 18px;
-   padding: 5px 5px;
-   left:800px;
-   top:300px;
-   cursor: pointer;
-}
+ }
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
