@@ -51,3 +51,9 @@ window.onclick = function(event) {
   }
 
 }
+
+function SignUp(){
+  
+  modal1.style.display = "none";
+  modal.style.display = "block";
+}
