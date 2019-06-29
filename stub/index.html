@@ -18,55 +18,72 @@
     <div id="main-container-div">
 
         <div class="header">
-            <h1> ScriBBler </h1>
-            <h5> Explore, Imagine, Create </h5>
-            <input id = myBtn1 type="button" class="button" value="Sign Up">
+            <a id="pageTitle" class="logo-title"> ScriBBler </a>
+            <p class="middleText">Explore, Imagine, Create </p>
+            <input id="myBtn1" type="button" class="button" value="Sign Up">
+            <input id="myBtn2" type="button" class="button" value="Sign In">
+        </div>
+        <div>
+
+            <!-- Insert code for Sign In modal here -->
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <span id=csignin class="close">&times;</span>
+                    <div class="container">
+                        <form>
+                            <h2>Welcome Back!</h2>
+                            <hr>
+                            <label for="username" class="label-text">User name</label>
+                            <input id="username" type="text" class="sign-in-input" placeholder="Enter username"
+                                required>
+                            <label for="password" class="label-text">Password</label>
+                            <input id="password" type="password" class="sign-in-input" placeholder="Enter password"
+                                required>
+                            <button class="submit-btn">Sign In</button>
+                            <p class="new-signup">Not a Member? <a class="sign-up-href" href="#" onclick="signUp()">
+                                    Sign Up</a> </p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+            <!-- Insert code for Sign Up modal here -->
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <div class="container">
                         <form>
-                            <h2 style="text-align:center;">Get Started</h2><hr>                            
-                            <label for = "fullname" class="label-text">Full Name</label>
-                            <input id = "fullname" type="text" placeholder="Enter Full Name" class="sign-up-input" required>
-                            <label for = "username" class= "label-text">Username</label>
-                            <input id = "username" type="text" placeholder="Enter Username" class="sign-up-input" required>
-                            <label for = "password" class= "label-text">Password</label>
-                            <input id = "password" type="password" placeholder="Enter password" class="sign-up-input" required>
-                            <label for = "confirmpassword" class= "label-text">Confirm Password</label>
-                            <input id = "confirmpassword" type="password" placeholder="Confirm Password" class="sign-up-input" required>
+                            <h2 style="text-align:center;">Get Started</h2>
+                            <hr>
+                            <label for="fullname" class="label-text">Full Name</label>
+                            <input id="fullname" type="text" placeholder="Enter Full Name" class="sign-up-input"
+                                required>
+                            <label for="username" class="label-text">Username</label>
+                            <input id="username" type="text" placeholder="Enter Username" class="sign-up-input"
+                                required>
+                            <label for="password" class="label-text">Password</label>
+                            <input id="password" type="password" placeholder="Enter password" class="sign-up-input"
+                                required>
+                            <label for="confirmpassword" class="label-text">Confirm Password</label>
+                            <input id="confirmpassword" type="password" placeholder="Confirm Password"
+                                class="sign-up-input" required>
                             <button class="submit-btn">Sign Up</button>
-                    </form>
-                    
+                        </form>
                     </div>
                 </div>
             </div>
-            <input id = myBtn2 type="button" class="button" value="Sign In">
-            <div id="myModal1" class="modal">
-                    <div class="modal-content">
-                        <span id= csignin class="close">&times;</span>
-                        <div class="container">
-                            <form>
-                                <h2>Welcome Back!</h2><hr>
-                                <label for = "username" class = "label-text">User name</label>
-                                <input id = "username" type="text" class="sign-in-input" placeholder="Enter username" required>
-                                <label for = "password" class = "label-text">Password</label>
-                                <input id = "password" type="password" class="sign-in-input" placeholder="Enter password" required>
-                                <button class="submit-btn">Sign In</button>
-                                <p class="new-signup">Not a Member? <a class = "sign-up-href" href = "#" onclick = "SignUp()"> Sign Up</a> </p>
-                        </form>                      
-                        </div>                 
-                    
-                    </div>
-                </div>
-            
-
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
 
         </div>
-           
+
+           <!-- Insert code for Create Post modal here -->
         <div class="postButtons">
-                <input type="button" class="button1" value="All Posts">
+                <input id="all-posts-btn" type="button" class="button1" value="All Posts">
                 <input id = cpost type="button" class="button1" value="Create Posts">
                 <div id="myModal2" class="modal">
                         <div class="modal-content-post">
@@ -84,24 +101,7 @@
 
         </div>
     </div>
-
-    <div>
-
-    	<!-- Insert code for Sign In modal here -->
-
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Sign Up modal here -->
-
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Create Post modal here -->
-
-    </div>
+    
 
 	<!-- Place all Javascript for header in this file -->
 	<script src="js\header.js"></script>
