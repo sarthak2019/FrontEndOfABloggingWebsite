@@ -36,10 +36,11 @@ function postLiked(){
 var firstComment=0;
 function addComments(id){
 	var addEventName = id.value +'<br>';
-	var commentBox = document.getElementById('userComments');
-	document.getElementById('commentExists').innerHTML='<h6>All Comments</h6>';
-	document.getElementById('addEventNames').innerHTML += '<p>'+addEventName+'</p>';         
-	commentBox.value=commentBox.defaultValue;
+        if(id.value!=''){
+		var commentBox = document.getElementById('userComments');
+		document.getElementById('addEventNames').innerHTML += '<p>'+addEventName+'</p>';         
+		commentBox.value=commentBox.defaultValue;
+        }
 }
 
 

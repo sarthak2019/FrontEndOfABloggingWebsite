@@ -74,11 +74,16 @@
    <span id="likeCount" style="font-size:15px;">Be the first one to like this!</span> 
    <br/>
     <br/>
-    <input type="textarea" placeholder="Leave a comment..." id="userComments" value=""> 
-    <br/>
-    <br/>
+   <!-- <input type="textarea" placeholder="Leave a comment..." id="userComments" value=""> -->
+   <textarea rows="4" cols="73" placeholder="Leave a comment..." id="userComments" value=""></textarea> 
+    <br>
+    <br>
     <button id="addList" onclick="addComments(userComments)">Comment</button> 
-    <div id="commentExists"></div>
+    <br>
+    <br>
+    <div id="commentsContainer">
+	<h6>All Comments</h6>    
+    </div>
     <div id="addEventNames"></div> 
 
    <script src="..\js\post.js" defer></script>

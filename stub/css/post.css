@@ -19,3 +19,7 @@
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+h6{
+	font-weight: bold !important;
+	font-family : Agency FB !important;
+}
