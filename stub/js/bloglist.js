@@ -1,16 +1,21 @@
-var modal = document.getElementById("myModal");
-var modal1 = document.getElementById("myModal1");
+window.onload = function() {
+    var postdescs = document.getElementsByClassName('post-desc');
 
-var btn = document.getElementById("myBtn1");
-var btn1 = document.getElementById("myBtn2");
-
-var clssignup = document.getElementsByClassName("close")[0];
-var clssignin = document.getElementsByClassName("close")[1];
-
-clssignup.onclick = function(){
-    modal.style.display = "none";
+    var i;
+    for(i = 0; i < postdescs.length; i++){
+        var length = postdescs[i].innerHTML.length;
+        postdescs[i].innerHTML = postdescs[i].innerHTML.slice(0, length-(length-227));
+    }
 }
 
-clssignin.onclick = function(){
-    modal1.style.display = "none";
+function trashModal(){
+    document.getElementById('deleteModal').style.display = "block";
+}
+
+function noButton(){
+    document.getElementById('deleteModal').style.display = "none";
+}
+
+function morePostDetails(){
+    location.href = "post.html";
 }
