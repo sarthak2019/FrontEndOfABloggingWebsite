@@ -1,91 +1,150 @@
 <!DOCTYPE html>
-<head>
-   <link href='..\css\post.css' rel='stylesheet' type='text/css'>
-   <link href='..\css\header.css' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
-   <link href='..\css\font.css' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-   <style>        
-   </style>
-</head>
-<body>
-   <div class="header">
-      <!-- Insert code for Sign Up, Sign In button here. 
-         Add code for "ScriBBler" heading and the sub-heading -->
-<a id="pageTitle" class = "logo-title"> ScriBBler </a>
-<p class="middleText">Explore, Imagine, Create </p>
-<input id = "myBtn1" type="button" class="button" value="Sign Up">
-<div id="myModal" class="modal">
-   <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="container">
-         <form>
-            <h2 style="text-align:center;">Get Started</h2>
-            <hr>
-            <label for = "fullname" class="label-text">Full Name</label>
-            <input id = "fullname" type="text" placeholder="Enter Full Name" class="sign-up-input" required>
-            <label for = "username" class= "label-text">Username</label>
-            <input id = "username" type="text" placeholder="Enter Username" class="sign-up-input" required>
-            <label for = "password" class= "label-text">Password</label>
-            <input id = "password" type="password" placeholder="Enter password" class="sign-up-input" required>
-            <label for = "confirmpassword" class= "label-text">Confirm Password</label>
-            <input id = "confirmpassword" type="password" placeholder="Confirm Password" class="sign-up-input" required>
-            <button class="submit-btn">Sign Up</button>
-         </form>
-      </div>
-   </div>
-</div>
-<input id = "myBtn2" type="button" class="button" value="Sign In">
-<div id="myModal1" class="modal">
-   <div class="modal-content">
-      <span id= csignin class="close">&times;</span>
-      <div class="container">
-         <form>
-            <h2>Welcome Back!</h2>
-            <hr>
-            <label for = "username" class = "label-text">User name</label>
-            <input id = "username" type="text" class="sign-in-input" placeholder="Enter username" required>
-            <label for = "password" class = "label-text">Password</label>
-            <input id = "password" type="password" class="sign-in-input" placeholder="Enter password" required>
-            <button class="submit-btn">Sign In</button>
-            <p class="new-signup">Not a Member? <a class = "sign-up-href" href = "#" onclick = "SignUp()"> Sign Up</a> </p>
-         </form>
-      </div>
-   </div>
-</div>
-   </div>
-   <div class="blogContent">
-   <div id="blogTitle" class="blogTite">
-      <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
-   </div>
-   <div class="blogAuthor">
-      <!-- Insert code for Edit/Save button and  -->
-      <p>Jimi</p>
-      <button id="editButton" onclick="postEdit()" class="btn btn-success">Edit</button>
-   </div>
-   <div class="blogText" id="blogText">
-      <p id="blogBody">
-         Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
-      </p>
-   </div>
-   <!-- Insert code for Like button, Comment button, Comment box here-->
-   <button  id= "likeBlog" onclick="postLiked()">Like</button> 
-   <br/>
-   <span id="likeCount" style="font-size:15px;">Be the first one to like this!</span> 
-   <br/>
-    <br/>
-   <!-- <input type="textarea" placeholder="Leave a comment..." id="userComments" value=""> -->
-   <textarea rows="4" cols="73" placeholder="Leave a comment..." id="userComments" value=""></textarea> 
-    <br>
-    <br>
-    <button id="addList" onclick="addComments(userComments)">Comment</button> 
-    <br>
-    <br>
-    <div id="commentsContainer">
-	<h6>All Comments</h6>    
-    </div>
-    <div id="addEventNames"></div> 
 
-   <script src="..\js\post.js" defer></script>
-   <script src="..\js\header.js">             </script>
+<head>
+    <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <!-- Insert code for Sign Up, Sign In button here. 
+             Add code for "ScriBBler" heading and the sub-heading -->
+
+        <div class="header">
+            <a id="pageTitle" class="logo-title"> ScriBBler </a>
+            <p class="middleText">Explore, Imagine, Create </p>
+            <input id="myBtn1" type="button" class="button" value="Sign Up">
+            <input id="myBtn2" type="button" class="button" value="Sign In">
+        </div>
+        <div>
+
+            <!-- Insert code for Sign In modal here -->
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <span id=csignin class="close">&times;</span>
+                    <div class="container">
+                        <form>
+                            <h2>Welcome Back!</h2>
+                            <hr>
+                            <label for="username" class="label-text">User name</label>
+                            <input id="username" type="text" class="sign-in-input" placeholder="Enter username"
+                                required>
+                            <label for="password" class="label-text">Password</label>
+                            <input id="password" type="password" class="sign-in-input" placeholder="Enter password"
+                                required>
+                            <button class="submit-btn">Sign In</button>
+                            <p class="new-signup">Not a Member? <a class="sign-up-href" href="#" onclick="signUp()">
+                                    Sign Up</a> </p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div>
+
+            <!-- Insert code for Sign Up modal here -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="container">
+                        <form>
+                            <h2 style="text-align:center;">Get Started</h2>
+                            <hr>
+                            <label for="fullname" class="label-text">Full Name</label>
+                            <input id="fullname" type="text" placeholder="Enter Full Name" class="sign-up-input"
+                                required>
+                            <label for="username" class="label-text">Username</label>
+                            <input id="username" type="text" placeholder="Enter Username" class="sign-up-input"
+                                required>
+                            <label for="password" class="label-text">Password</label>
+                            <input id="password" type="password" placeholder="Enter password" class="sign-up-input"
+                                required>
+                            <label for="confirmpassword" class="label-text">Confirm Password</label>
+                            <input id="confirmpassword" type="password" placeholder="Confirm Password"
+                                class="sign-up-input" required>
+                            <button class="submit-btn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="blogContent">
+                <div id="blogTitle" class="blogTite">
+                    <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
+                </div>
+                <div class="blogAuthor">
+                    <!-- Insert code for Edit/Save button and  -->
+                    <p>Jimi</p>
+                    <button id="editButton" onclick="postEdit()" class="btn btn-success">Edit</button>
+                </div>
+                <div class="blogText" id="blogText">
+                    <p id="blogBody">
+                        Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix
+                        expanded
+                        the range and vocabulary of the electric guitar into areas no musician had ever ventured before.
+                        His
+                        boundless drive, technical ability and creative application of such effects as distortion
+                        forever
+                        transformed the sound of rock and roll. While creating his unique musical voice and guitar
+                        style,
+                        Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk
+                        music, 1950s
+                        rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and
+                        gain.[119] He was instrumental in developing the previously undesirable technique of guitar
+                        amplifier
+                        feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected
+                        the
+                        standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th
+                        string
+                        root notes with his thumb.[349] He applied this technique during the beginning bars of "Little
+                        Wing",
+                        which allowed him to sustain the root note of chords while also playing melody. This method has
+                        been
+                        described as piano style, with the thumb playing what a pianist's left hand would play and the
+                        other
+                        fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he
+                        developed an
+                        ability to play rhythm chords and lead lines together, giving the audio impression that more
+                        than one
+                        guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic
+                        phasing
+                        effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix
+                        pioneered the use of the instrument as an electronic sound source. Players before him had
+                        experimented
+                        with feedback and distortion, but Hendrix turned those effects and others into a controlled,
+                        fluid
+                        vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In
+                        rock
+                        guitar, there are but two eras ï¿½ before Hendrix and after Hendrix."
+                    </p>
+                </div>
+                <!-- Insert code for Like button, Comment button, Comment box here-->
+                <button id="likeBlog" onclick="postLiked()">Like</button>
+                <br />
+                <span id="likeCount" style="font-size:15px;">Be the first one to like this!</span>
+                <br />
+                <br />
+                <!-- <input type="textarea" placeholder="Leave a comment..." id="userComments" value=""> -->
+                <textarea rows="4" cols="73" placeholder="Leave a comment..." id="userComments" value=""></textarea>
+                <br>
+                <br>
+                <button id="addList" onclick="addComments(userComments)">Comment</button>
+                <br>
+                <br>
+                <div id="commentsContainer">
+                    <h6>All Comments</h6>
+                </div>
+                <div id="addEventNames"></div>
+
+                <script src="..\js\post.js" defer></script>
+                <script src="..\js\header.js">
+                </script>
 </body>
