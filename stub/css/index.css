@@ -41,5 +41,21 @@ body{
    text-align: center;
  }
 
+ #content-post {
+  width: 100%;
+  margin-top: 6px;
+  background-color: rgb(241, 241, 241);;
+  height:300px;
+
+}
+
+.modal-content-post {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
