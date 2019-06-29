@@ -4,7 +4,7 @@ window.onload = function() {
     var i;
     for(i = 0; i < postdescs.length; i++){
         var length = postdescs[i].innerHTML.length;
-        postdescs[i].innerHTML = postdescs[i].innerHTML.slice(0, length-(length-227));
+        postdescs[i].innerHTML = postdescs[i].innerHTML.slice(0, length-464);
     }
 }
 
