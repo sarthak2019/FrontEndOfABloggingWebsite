@@ -1,12 +1,16 @@
 var saveState=0;
 
- // To switch the mode between save and edit
+ // To switch the mode between save and edit for Blog Title and body
 function postEdit(){
         if(saveState==0){
                         document.getElementById("editButton").innerHTML="Save";
+             	 	document.getElementById("blogTitle").setAttribute("contenteditable",true);
+			document.getElementById("blogText").setAttribute("contenteditable",true);
                         saveState=1;
         }else{
                         document.getElementById("editButton").innerHTML="Edit";
+			document.getElementById("blogTitle").setAttribute("contenteditable",false);
+			document.getElementById("blogText").setAttribute("contenteditable",false);
                         saveState=0;
         }
 }
@@ -37,6 +41,5 @@ function addComments(id){
 	document.getElementById('addEventNames').innerHTML += '<p>'+addEventName+'</p>';         
 	commentBox.value=commentBox.defaultValue;
 }
-
 
 
