@@ -16,6 +16,11 @@ function noButton(){
     document.getElementById('deleteModal').style.display = "none";
 }
 
+function yesButton(){
+    document.getElementById('deleteModal').style.display = "block";
+}
+
+
 function morePostDetails(){
     location.href = "post.html";
 }
