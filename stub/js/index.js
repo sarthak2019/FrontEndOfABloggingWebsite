@@ -9,3 +9,8 @@ btn2.onclick = function() {
 cls.onclick = function(){
   modal2.style.display = "none";
 }
+
+var allpostsbtn = document.getElementById("all-posts-btn");
+allpostsbtn.onclick = function() {
+  window.location.href = "html/bloglist.html";
+}
