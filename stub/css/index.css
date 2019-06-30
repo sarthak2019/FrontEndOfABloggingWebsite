@@ -41,5 +41,43 @@ body{
    text-align: center;
  }
 
+ #content-post {
+  width: 100%;
+  margin-top: 6px;
+  background-color: rgb(241, 241, 241);;
+  height:300px;
+
+}
+
+.modal-content-post {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
+#title{
+
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  width:250px;
+}
+
+.submit-btn-post{
+
+  background: green;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 42.5%;
+    width: 100px;
+}
+
