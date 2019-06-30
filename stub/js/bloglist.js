@@ -4,7 +4,7 @@ window.onload = function() {
     var i;
     for(i = 0; i < postdescs.length; i++){
         var length = postdescs[i].innerHTML.length;
-        postdescs[i].innerHTML = postdescs[i].innerHTML.slice(0, length-464);
+        postdescs[i].innerHTML = postdescs[i].innerHTML.slice(0, length-536);
     }
 }
 
@@ -15,11 +15,6 @@ function trashModal(){
 function noButton(){
     document.getElementById('deleteModal').style.display = "none";
 }
-
-function yesButton(){
-    document.getElementById('deleteModal').style.display = "block";
-}
-
 
 function morePostDetails(){
     location.href = "post.html";
