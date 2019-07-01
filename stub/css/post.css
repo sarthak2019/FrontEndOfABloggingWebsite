@@ -10,13 +10,10 @@
 
 }
 .blogAuthor {
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px; //changed to align as per image
     font-family: 'Niconne', cursive;
     font-size: 30px;
     display: ruby;
-}
-.blogContent{
-    align-self: center;
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
@@ -52,11 +49,11 @@ h6{
     vertical-align: middle;
 }
 
+/*To add margin for text inside the body*/
 .blogContent{
-    width:95%;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin-top: 3%;
+	margin-left: 7%;
+	margin-right: 7%;
 }
 
 #likeBlog{
