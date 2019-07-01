@@ -47,7 +47,9 @@ clssignin.onclick = function () {
 
 //when user clicks on signup hyperlink on signin model, should open the signup model
 function signUp() {
-
+  
+  document.getElementById('signinusername').value = "";
+  document.getElementById('signinpassword').value = "";
   modal1.style.display = "none";
   modal.style.display = "block";
 
