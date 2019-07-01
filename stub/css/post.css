@@ -1,19 +1,106 @@
-.blogTite {
-    font-size: 150%;
+.blogTitl {
+    font-size: 30px;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    text-align:center;
+    align-self: center;
 }
 .blogText {
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .blogAuthor {
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+    display: ruby;
 }
 .blogContent{
-
+    align-self: center;
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+h6{
+	font-weight: bold !important;
+	font-family : Agency FB !important;
+}
+
+.blogAuthor{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#author{
+    float:left;
+}
+
+#editButton{
+    background-color: crimson;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    width:120px;
+    height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.blogContent{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#likeBlog{
+    border-radius: 3px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    width:120px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+#likeCount{
+    font-family: 'Courier New', Courier, monospace
+}
+
+#addList{
+    color: white;
+    background-color: crimson;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    width:120px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle; 
+}
+
+.comments{
+    border: solid lightgray;
+    border-width: thick thick thick thick;
+    float: left;
+    width: 50%;
+    min-height: 35px;
+    vertical-align: middle;
+}
+
+#blogBody{
+    text-align: justify;
+}
