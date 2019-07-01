@@ -1,5 +1,5 @@
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-body{
+body {
    background: url('background.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -9,8 +9,7 @@ body{
    background-size: 100% cover!important;
    overflow:hidden;
    display: block;
-} 
-
+}
 .button {
    background-color:blue;
    border: none;
@@ -22,17 +21,15 @@ body{
    float: right;
    position: relative;
    top:-115px;
- }
-
- .postButtons{
+}
+ .postButtons {
    display:block;
    margin:auto;
    position:absolute;
    top: 42%;
    left:42%;
  }
- 
- .button1{
+ .button1 {
    background-color: rgb(207, 181, 59);
    padding: 10px;
    font: 1em sans-serif;
@@ -42,55 +39,44 @@ body{
    text-align: center;
    cursor: pointer;
  }
-
  #content-post {
   width: 100%;
   margin-top: 6px;
   background-color: rgb(241, 241, 241);;
   height:300px;
-
 }
-
 .modal-content-post {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 65%;
-}
-
-                                 
-#title{
-
+}                                
+#title {
   padding: 10px;
   margin: 10px 0px;
   border: none;
   background-color: rgb(241, 241, 241);
   width:50%;
 }
-
-.submit-btn-post{
-
+.submit-btn-post {
   background: green;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-    margin-left: 42.5%;
-    width: 100px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 42.5%;
+  width: 100px;
 }
-
-.labelText{
-
+.labelText {
   font-size: 18px;
-    font-weight: bolder;
-    margin: 10px 0;
-    display: inline-block;
-    font-family: Agency FB;
-    margin-left: 2px;
-    margin-bottom: 1px;
-    margin-top: 30px;
+  font-weight: bolder;
+  margin: 10px 0;
+  display: inline-block;
+  font-family: Agency FB;
+  margin-left: 2px;
+  margin-bottom: 1px;
+  margin-top: 30px;
 }
-

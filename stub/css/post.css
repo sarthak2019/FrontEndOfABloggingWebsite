@@ -7,34 +7,23 @@
 }
 .blogText {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
-.blogAuthor {
-    padding: 0px 0px 0px 0px; //changed to align as per image
-    font-family: 'Niconne', cursive;
-    font-size: 30px;
-    display: ruby;
-}
-
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
-h6{
+h6 {
 	font-weight: bold !important;
 	font-family : Agency FB !important;
 }
-
-.blogAuthor{
+.blogAuthor {
     width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-family: 'Niconne', cursive;
 }
-
-#author{
+#author {
     float:left;
 }
-
-#editButton{
+#editButton {
     background-color: crimson;
     border: none;
     color: white;
@@ -49,15 +38,13 @@ h6{
     white-space: nowrap;
     vertical-align: middle;
 }
-
 /*To add margin for text inside the body*/
-.blogContent{
+.blogContent {
     margin-top: 3%;
 	margin-left: 7%;
 	margin-right: 7%;
 }
-
-#likeBlog{
+#likeBlog {
     border-radius: 3px;
     color: white;
     background-color: crimson;
@@ -71,12 +58,10 @@ h6{
     white-space: nowrap;
     vertical-align: middle;
 }
-
-#likeCount{
+#likeCount {
     font-family: 'Courier New', Courier, monospace
 }
-
-#addList{
+#addList {
     color: white;
     background-color: crimson;
     border: none;
@@ -89,8 +74,7 @@ h6{
     white-space: nowrap;
     vertical-align: middle; 
 }
-
-.comments{
+.comments {
     border: solid lightgray;
     border-width: thick thick thick thick;
     float: left;
@@ -98,7 +82,6 @@ h6{
     min-height: 35px;
     vertical-align: middle;
 }
-
-#blogBody{
+#blogBody {
     text-align: justify;
 }
