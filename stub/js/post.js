@@ -3,20 +3,20 @@ var saveState = 0;
 // To switch the mode between save and edit for Blog Title and body
 function postEdit() {
 	if (saveState == 0) {
-		document.getElementById("editButton").innerHTML = "Save  "  + "<i class = 'fa fa-floppy-o' aria-hidden='true'></i>";
+		document.getElementById("editButton").innerHTML = "Save  " + "<i class = 'fa fa-floppy-o' aria-hidden='true'></i>";
 		document.getElementById("blogTitle").setAttribute("contenteditable", true);
 		document.getElementById("blogText").setAttribute("contenteditable", true);
 		saveState = 1;
 	} else {
-		document.getElementById("editButton").innerHTML = "Edit  " +  "<i class='fa fa-pencil-square-o' aria-hidden='true'></i>";
+		document.getElementById("editButton").innerHTML = "Edit  " + "<i class='fa fa-pencil-square-o' aria-hidden='true'></i>";
 		document.getElementById("blogTitle").setAttribute("contenteditable", false);
 		document.getElementById("blogText").setAttribute("contenteditable", false);
 		saveState = 0;
 	}
 }
 
-
 var numberOfClicks = 0;
+
 // To update like count
 function postLiked() {
 	document.getElementById("likeBlog").innerHTML = "<i class='fa fa-thumbs-up' aria-hidden='true'></i>" + "  Liked!";
@@ -31,8 +31,7 @@ function postLiked() {
 	}
 }
 
-
-// to add comments and display
+// To add comments and display
 var firstComment = 0;
 function addComments(id) {
 	var addEventName = id.value + '<br>';
@@ -42,5 +41,3 @@ function addComments(id) {
 		commentBox.value = commentBox.defaultValue;
 	}
 }
-
-

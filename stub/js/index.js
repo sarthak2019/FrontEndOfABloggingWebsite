@@ -50,5 +50,4 @@ window.onclick = function (event) {
     document.getElementById('content-post').value = "";
     modal2.style.display = "none";
   }
-
 }
