@@ -19,6 +19,7 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
     font-family: 'Niconne', cursive;
+    font-size: 30px;
 }
 #author {
     float:left;
