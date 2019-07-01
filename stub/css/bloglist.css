@@ -89,7 +89,7 @@ p{
   cursor: pointer;
   float: right;
   position: relative;
-  top:-100px;
+  top:-115px;
 }
 
 .fa-trash{
@@ -171,8 +171,4 @@ p{
   padding: 20px;
   border: 1px solid #888;
   width: 400px;
-}
-
-.post-desc{
-  overflow: hidden;
 }
