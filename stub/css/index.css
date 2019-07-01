@@ -1,3 +1,4 @@
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
 body{
    background: url('background.jpg');
    background-repeat: no-repeat;
@@ -54,10 +55,9 @@ body{
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 65%;
 }
 
-/* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
 #title{
 
@@ -65,7 +65,7 @@ body{
   margin: 10px 0px;
   border: none;
   background-color: rgb(241, 241, 241);
-  width:250px;
+  width:50%;
 }
 
 .submit-btn-post{
@@ -79,5 +79,17 @@ body{
     cursor: pointer;
     margin-left: 42.5%;
     width: 100px;
+}
+
+.labelText{
+
+  font-size: 18px;
+    font-weight: bolder;
+    margin: 10px 0;
+    display: inline-block;
+    font-family: Agency FB;
+    margin-left: 2px;
+    margin-bottom: 1px;
+    margin-top: 30px;
 }
 
